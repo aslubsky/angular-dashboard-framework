@@ -73,6 +73,8 @@ angular.module('adf')
           // collapse
           $scope.isCollapsed = false;
         } else {
+          console.trace();
+          console.log(definition, this, dashboard);
           $log.warn('could not find widget ' + definition.type);
         }
       } else {
